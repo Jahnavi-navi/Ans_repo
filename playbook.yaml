@@ -1,0 +1,18 @@
+play:
+hosts: all
+tasks:
+  -
+    name: "execute script"
+    script: ./opt/shellscript.sh
+  -
+    name: "install httpd package"
+    yum:
+      name: httpd
+      state: present
+
+  -
+    name: "start webserver"
+    service:
+      name: httpd
+      state: started  
+

@@ -1,0 +1,8 @@
+all:
+  children:
+    linux:
+      host:
+        3.26.152.87:
+          ansible_user: linux1
+          ansible_user: Jahnavi@2
+          ansible_connection: ssh
